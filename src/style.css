@@ -1,0 +1,187 @@
+body {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    background: url("/assets/background-full/4.png") no-repeat;
+    margin: 0 auto;
+}
+
+.container {
+    width: 375px;
+}
+
+/* Header Container -----------------------------*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 20px 0;
+}
+
+.header-item {
+    color: aliceblue;
+}
+
+.header-item:last-child {
+    font-size: 13px;
+    opacity: .6;
+}
+
+/* Title Container ------------------------------*/
+
+.title {
+    margin: 157px 45px 0;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Container ------------------------------*/
+
+.content {
+    margin: 30px 78px 0 88px;
+    width: 209px;
+    height: 92px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    line-height: 31px;
+}
+
+li .img-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+}
+
+p {
+    margin: 0 0 0 8px;
+    font-size: 17px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.684495);
+}
+
+/* Sub Container With Cards ----------------------*/
+
+.sub {
+    display: flex;
+    margin: 52px 40px 0;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    height: 162px;
+    margin-right: 16px;
+    color: white;
+}
+
+.card:first-child {
+    background: url("/assets/shape-1.svg") no-repeat;
+}
+
+.card:last-child {
+    background: url("/assets/shape-2.svg") no-repeat;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.type {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sub-type {
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.price {
+    width: 64px;
+    line-height: 15px;
+}
+
+.price span:first-child {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.price span:last-child {
+    font-size: 14px;
+}
+
+.per-month {
+    font-size: 12px;
+}
+
+.line {
+    margin-bottom: 10px;
+}
+
+/* Button ----------------------*/
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+button {
+    width: 280px;
+    height: 54px;
+    background: linear-gradient(270deg, #1987FF 0%, #19CCFF 100%);
+    border-radius: 30px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Footer Container ------------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 25px 0;
+}
+
+.text {
+    text-align: center;
+    font-size: 11px;
+    opacity: 50%;
+    color: white;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    font-size: 11px;
+}
+
+a {
+    color: #BDC0D0;
+}
