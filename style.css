@@ -5,8 +5,21 @@ body {
     margin: 0 auto;
 }
 
-.container {
-    max-width: 375px;
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+    body {
+        background: url("/assets/background-full/4@2x.png") no-repeat;
+        background-size: cover;
+        background-position-y: 15%;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 3dppx) {
+    body {
+        background: url("/assets/background-full/4@3x.png") no-repeat;
+        background-size: cover;
+    }
 }
 
 /* Header Container -----------------------------*/
@@ -28,7 +41,14 @@ body {
 /* Title Container ------------------------------*/
 
 .title {
-    margin: 157px 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 157px;
+}
+
+.title.es {
+    margin: 157px 0 0;
 }
 
 h1 {
@@ -39,15 +59,39 @@ h1 {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+h1.ja {
+    font-size: 28px;
+}
+
+h1.fr {
+    font-size: 32px;
+}
+
+h1.ru {
+    font-size: 30px;
+}
+
+
 /* Content Container ------------------------------*/
 
 .content {
-    margin: 30px 78px 0 88px;
-    width: 209px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
     height: 92px;
 }
 
+.content.fr {
+    margin-top: 20px;
+}
+
 ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     padding: 0;
     margin: 0;
 }
@@ -77,10 +121,17 @@ p {
 
 .sub {
     display: flex;
-    height: 180px;
-    margin: 40px 40px 0;
+    margin: 50px 40px 0;
     justify-content: center;
     align-items: center;
+}
+
+.sub.ja {
+    margin-top: 40px;
+}
+
+.sub.fr {
+    margin-top: 30px;
 }
 
 .card {
@@ -100,8 +151,7 @@ p {
 
 .card.active {
     opacity: 1;
-    width: 144px;
-    height: 178px;
+    transform: scale(1.1);
 }
 
 .card:first-child {
@@ -155,9 +205,9 @@ p {
     font-weight: 700;
     font-size: 14px;
 
-    -webkit-box-shadow: 0 6px 5px 0 rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 6px 5px 0 rgba(0,0,0,0.1);
-    box-shadow: 0 6px 5px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .sale {
@@ -180,13 +230,8 @@ p {
 }
 
 .sale.active {
-    width: 38px;
-    height: 38px;
-    top: -2px;
-    right: -2px;
     font-size: 12px;
 }
-
 
 /* Button ----------------------*/
 
@@ -234,4 +279,195 @@ footer {
 
 .links a {
     color: #BDC0D0;
+}
+
+/* 12, 12 Pro */
+
+@media only screen
+and (device-width: 390px)
+and (device-height: 844px)
+and (-webkit-device-pixel-ratio: 3) {
+
+    .title {
+        margin-top: 167px;
+    }
+
+    .sub.ja {
+        margin-top: 40px;
+    }
+
+    .content {
+        margin-top: 40px;
+    }
+
+    h1.ja {
+        font-size: 32px;
+    }
+
+    h1.fr {
+        font-size: 32px;
+    }
+}
+
+/* 6+, 7+, 8+ */
+
+@media only screen
+and (device-width: 414px)
+and (device-height: 736px)
+and (-webkit-device-pixel-ratio: 3) {
+    body {
+        background-position-y: 10%;
+    }
+
+    .title {
+        margin-top: 168px;
+    }
+
+    .header {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h1.fr {
+        font-size: 30px;
+    }
+
+    h1.ru {
+        font-size: 28px;
+    }
+
+    .sub.ja {
+        margin-top: 30px;
+    }
+
+    .content {
+        margin-top: 16px;
+    }
+
+    .text-item.ja {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 120px;
+        height: 150px;
+    }
+
+    .sub-type {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .sub-type.fr {
+        font-size: 12px;
+    }
+
+    button {
+        height: 40px;
+    }
+
+    .footer, .links {
+        margin-top: 12px;
+    }
+
+    .line.fr {
+        font-size: 12px;
+    }
+
+    .line.ru {
+        font-size: 12px;
+    }
+
+    .sale {
+        width: 28px;
+        height: 28px;
+        font-weight: 400;
+        font-size: 10px;
+    }
+}
+
+/* 6,7,8, se */
+
+@media screen
+and (min-device-width: 375px)
+and (max-device-height: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+    .header, .sub, .button {
+        margin-top: 20px;
+    }
+
+    .title {
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h1.ja {
+        font-size: 24px;
+    }
+
+    h1.fr {
+        font-size: 26px;
+    }
+
+    h1.ru {
+        font-size: 28px;
+    }
+
+    .content {
+        margin-top: 16px;
+    }
+
+    .content.fr {
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 110px;
+        height: 140px;
+    }
+
+    .sub-type.fr {
+        font-size: 12px;
+    }
+
+    button {
+        height: 40px;
+    }
+
+    .footer, .links {
+        margin-top: 12px;
+    }
+
+    .price span {
+        font-size: 16px;
+    }
+
+    .sub-type {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .per-month {
+        font-size: 10px;
+    }
+
+    .line {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .sale {
+        width: 27px;
+        height: 27px;
+        font-weight: 400;
+        font-size: 10px;
+    }
 }
