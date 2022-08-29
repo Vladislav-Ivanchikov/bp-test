@@ -1,27 +1,29 @@
 /* 12, 12 Pro */
 
-@media only screen
-and (device-width: 390px)
-and (device-height: 844px)
-and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .title {
+    margin-top: 167px;
+  }
 
-    .title {
-        margin-top: 167px;
-    }
+  .sub.fr,
+  .sub.ja {
+    margin-top: 30px;
+  }
 
-    .sub.ja {
-        margin-top: 40px;
-    }
+  .sub.ru,
+  .sub.es {
+    margin-top: 60px;
+  }
 
-    .content {
-        margin-top: 40px;
-    }
+  .content {
+    margin-top: 40px;
+  }
 
-    h1.ja {
-        font-size: 32px;
-    }
+  h1.ja {
+    font-size: 32px;
+  }
 
-    h1.fr {
-        font-size: 32px;
-    }
+  h1.fr {
+    font-size: 36px;
+  }
 }
