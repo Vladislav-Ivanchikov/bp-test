@@ -1,5 +1,4 @@
 /// Set language
-
 const languages = ['en', 'ru', 'es', 'fr', 'nl', 'zh', 'ja']
 let lang = navigator ? navigator.language.substring(0, 2).toLowerCase() : "en"
 
@@ -72,7 +71,7 @@ async function getContentByLang() {
     monthLine.textContent = data['3 DAYS FREE']
     annualLine.textContent = data['MOST POPULAR']
     perMonth.textContent = data['{{price}}/month']
-    perAnnual.textContent = data['{{price}}/month']
+    perAnnual.textContent = data['{{price}}/month/annual']
     sale.textContent = data['-83%']
     button.textContent = data['Continue']
     footerText.textContent = data['Auto-renewable. Cancel anytime.']
