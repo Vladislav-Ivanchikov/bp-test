@@ -1,0 +1,79 @@
+/* 6+, 7+, 8+ */
+
+@media only screen
+and (device-width: 414px)
+and (device-height: 736px)
+and (-webkit-device-pixel-ratio: 3) {
+    body {
+        background-position-y: 10%;
+    }
+
+    .title {
+        margin-top: 168px;
+    }
+
+    .header {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h1.fr {
+        font-size: 30px;
+    }
+
+    h1.ru {
+        font-size: 28px;
+    }
+
+    .sub.ja {
+        margin-top: 30px;
+    }
+
+    .content {
+        margin-top: 16px;
+    }
+
+    .text-item.ja {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 120px;
+        height: 150px;
+    }
+
+    .sub-type {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .sub-type.fr {
+        font-size: 12px;
+    }
+
+    button {
+        height: 40px;
+    }
+
+    .footer, .links {
+        margin-top: 12px;
+    }
+
+    .line.fr {
+        font-size: 12px;
+    }
+
+    .line.ru {
+        font-size: 12px;
+    }
+
+    .sale {
+        width: 28px;
+        height: 28px;
+        font-weight: 400;
+        font-size: 10px;
+    }
+}
