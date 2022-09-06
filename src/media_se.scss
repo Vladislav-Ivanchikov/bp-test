@@ -1,0 +1,100 @@
+/* 6,7,8, se */
+
+@media screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  html[lang="fr"] {
+    .content {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    .sub-type {
+      font-size: 12px;
+    }
+  }
+
+  html[lang="ja"] {
+    h1 {
+      font-size: 24px;
+    }
+
+    .sub {
+      margin-top: 20px;
+    }
+  }
+
+  html[lang="ru"] {
+    .content, .sub {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  html[lang="zh"] {
+    .sub {
+      margin-top: 20px;
+    }
+  }
+
+  .header,
+  .sub,
+  .button {
+    margin-top: 20px;
+  }
+
+  .title {
+    margin-top: 150px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .content {
+    margin-top: 16px;
+  }
+
+  .card {
+    width: 110px;
+    height: 140px;
+
+    .price span {
+      font-size: 16px;
+    }
+
+    .sub-type {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .per-month {
+      font-size: 10px;
+    }
+
+    .line {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .sale {
+      width: 27px;
+      height: 27px;
+      font-weight: 400;
+      font-size: 10px;
+    }
+  }
+
+  button {
+    height: 42px;
+  }
+
+  .footer,
+  .links {
+    margin-top: 12px;
+  }
+}

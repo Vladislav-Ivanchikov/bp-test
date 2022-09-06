@@ -1,0 +1,34 @@
+/* 12, 12 Pro */
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  html[lang="fr"] {
+    .sub {
+      margin-top: 30px;
+    }
+  }
+
+  html[lang="ja"] {
+    .sub {
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  html[lang="es"], html[lang="ru"] {
+    .sub {
+      margin-top: 60px;
+    }
+  }
+
+  .title {
+    margin-top: 167px;
+  }
+
+  .content {
+    margin-top: 40px;
+  }
+
+}

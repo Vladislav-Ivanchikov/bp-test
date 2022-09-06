@@ -11,7 +11,7 @@
 body {
   font-family: SFProDisplay, sans-serif;
   box-sizing: border-box;
-  background: url("/assets/background-full/4.png") no-repeat;
+  background: url("./assets/img/4.png") no-repeat;
   margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   body {
-    background: url("/assets/background-full/4@2x.png") no-repeat;
+    background: url("./assets/img/4@2x.png") no-repeat;
     background-size: cover;
     background-position-y: 15%;
   }
@@ -27,7 +27,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
   body {
-    background: url("/assets/background-full/4@3x.png") no-repeat;
+    background: url("./assets/img/4@3x.png") no-repeat;
     background-size: cover;
   }
 }
@@ -173,11 +173,11 @@ p {
 }
 
 .card:first-child {
-  background: url("/assets/shape-1.svg") no-repeat;
+  background: url("./assets/img/shape-1.svg") no-repeat;
 }
 
 .card:last-child {
-  background: url("/assets/shape-2.svg") no-repeat;
+  background: url("./assets/img/shape-2.svg") no-repeat;
 }
 
 .card:last-child {
