@@ -1,12 +1,14 @@
 /* 6+, 7+, 8+ */
 
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  @import "variables";
   body {
     background-position-y: 10%;
   }
 
   html[lang="fr"] {
-    .sub-type, .line {
+    .sub-type,
+    .line {
       font-size: 12px;
     }
 
@@ -17,7 +19,7 @@
 
   html[lang="ja"] {
     .sub {
-      margin-top: 20px;
+      margin-top: $mt20;
     }
   }
 
@@ -28,8 +30,9 @@
   }
 
   html[lang="ru"] {
-    .content, .sub {
-      margin-top: 30px;
+    .content,
+    .sub {
+      margin-top: $mt20;
     }
 
     .line {
@@ -39,50 +42,52 @@
 
   html[lang="zh"] {
     .sub {
-      margin-top: 30px;
+      margin-top: $mt20;
     }
   }
 
   .title {
     margin-top: 168px;
+
+    h1 {
+      font-size: 30px;
+    }
   }
 
   .header,
   .sub {
-    margin-top: 30px;
-  }
-
-  h1 {
-    font-size: 30px;
+    margin-top: $mt20;
   }
 
   .content {
-    margin-top: 16px;
+    margin-top: $mt20;
   }
 
-  .card {
-    width: 120px;
-    height: 150px;
+  .sub{
+    .card {
+      width: 120px;
+      height: 150px;
+
+      .sub-type {
+        font-size: 14px;
+        margin-bottom: 14px;
+      }
+
+      .sale {
+        width: 29px;
+        height: 29px;
+        font-weight: 400;
+        font-size: 10px;
+      }
+    }
   }
 
-  .sub-type {
-    font-size: 14px;
-    margin-bottom: 14px;
+  button {
+    height: 48px;
   }
 
   .footer,
   .links {
     margin-top: 12px;
-  }
-
-  .sale {
-    width: 29px;
-    height: 29px;
-    font-weight: 400;
-    font-size: 10px;
-  }
-
-  button {
-    height: 48px;
   }
 }

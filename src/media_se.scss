@@ -1,9 +1,10 @@
 /* 6,7,8, se */
+@import "variables";
 
 @media screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   html[lang="fr"] {
     .content {
-      margin-top: 20px;
+      margin-top: $mt20;
     }
 
     h1 {
@@ -21,13 +22,18 @@
     }
 
     .sub {
-      margin-top: 20px;
+      margin-top: 15px;
+    }
+
+    .content {
+      margin-top: 10px;
     }
   }
 
   html[lang="ru"] {
-    .content, .sub {
-      margin-top: 20px;
+    .content,
+    .sub {
+      margin-top: $mt20;
     }
 
     h1 {
@@ -37,21 +43,21 @@
 
   html[lang="zh"] {
     .sub {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 
   .header,
   .sub,
   .button {
-    margin-top: 20px;
+    margin-top: $mt20;
   }
 
   .title {
     margin-top: 150px;
 
     h1 {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
 
@@ -59,33 +65,35 @@
     margin-top: 16px;
   }
 
-  .card {
-    width: 110px;
-    height: 140px;
+  .sub {
+    .card {
+      width: 110px;
+      height: 140px;
 
-    .price span {
-      font-size: 16px;
-    }
+      .price span {
+        font-size: 16px;
+      }
 
-    .sub-type {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
+      .sub-type {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
 
-    .per-month {
-      font-size: 10px;
-    }
+      .per-month {
+        font-size: 10px;
+      }
 
-    .line {
-      font-size: 12px;
-      margin-bottom: 8px;
-    }
+      .line {
+        font-size: 12px;
+        margin-bottom: 8px;
+      }
 
-    .sale {
-      width: 27px;
-      height: 27px;
-      font-weight: 400;
-      font-size: 10px;
+      .sale {
+        width: 27px;
+        height: 27px;
+        font-weight: 400;
+        font-size: 10px;
+      }
     }
   }
 
@@ -95,6 +103,6 @@
 
   .footer,
   .links {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 }

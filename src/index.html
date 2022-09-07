@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css"/>
-    <script src="bundle.js" defer></script>
-</head>
-<body>
-<main class="container">
-    <header class="header">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
         <div class="header-item">
-            <a href="#"><img src="/assets/images/Path.png" alt="X"/></a>
+          <a href="#"><img src="assets/addImg/Path.png" alt="X" /></a>
         </div>
         <div class="header-item"><a data-content="Restore" href="#"></a></div>
-    </header>
-    <section class="title">
+      </header>
+      <section class="title">
         <h1 data-content="Unlimited Access<br>to All Features"></h1>
-    </section>
-    <section class="content">
+      </section>
+      <section class="content">
         <ul>
-            <li>
-                <div class="img-item">
-                    <img src="/assets/unlimitedDocs.svg" alt=""/>
-                </div>
-                <div class="text-item"><p data-content="Unlimited documents"></p></div>
-            </li>
-            <li>
-                <div class="img-item"><img src="/assets/export.svg" alt=""/></div>
-                <div class="text-item"><p data-content="Count mode"></p></div>
-            </li>
-            <li>
-                <div class="img-item"><img src="/assets/noAds.svg" alt=""/></div>
-                <div class="text-item"><p data-content="Text recognition (OCR)"></p></div>
-            </li>
+          <li>
+            <div class="img-item">
+              <img src="assets/addImg/unlimitedDocs.svg" alt="" />
+            </div>
+            <div class="text-item">
+              <p data-content="Unlimited documents"></p>
+            </div>
+          </li>
+          <li>
+            <div class="img-item">
+              <img src="assets/addImg/export.svg" alt="" />
+            </div>
+            <div class="text-item"><p data-content="Count mode"></p></div>
+          </li>
+          <li>
+            <div class="img-item">
+              <img src="assets/addImg/noAds.svg" alt="" />
+            </div>
+            <div class="text-item">
+              <p data-content="Text recognition (OCR)"></p>
+            </div>
+          </li>
         </ul>
-    </section>
-    <section class="sub">
+      </section>
+      <section class="sub">
         <div class="card">
-            <div class="type">
-                <div class="sub-type" data-content="Monthly"></div>
-                <div class="price" data-content="Price month"></div>
-            </div>
-            <div class="line" data-content="3 DAYS FREE"></div>
-            <div class="per-month" data-content="{{price}}/month"></div>
+          <div class="type">
+            <div class="sub-type" data-content="Monthly"></div>
+            <div class="price" data-content="Price month"></div>
+          </div>
+          <div class="line" data-content="3 DAYS FREE"></div>
+          <div class="per-month" data-content="{{price}}/month"></div>
         </div>
         <div class="card">
-            <div class="sale" data-content="-83%"></div>
-            <div class="type">
-                <div class="sub-type" data-content="Annually"></div>
-                <div class="price" data-content="Price year"></div>
-            </div>
-            <div class="line" data-content="MOST POPULAR"></div>
-            <div class="per-month" data-content="{{price}}/month/annual"></div>
+          <div class="sale" data-content="-83%"></div>
+          <div class="type">
+            <div class="sub-type" data-content="Annually"></div>
+            <div class="price" data-content="Price year"></div>
+          </div>
+          <div class="line" data-content="MOST POPULAR"></div>
+          <div class="per-month" data-content="{{price}}/month/annual"></div>
         </div>
-    </section>
-    <section class="button">
+      </section>
+      <section class="button">
         <button data-content="Continue"></button>
-    </section>
-    <footer class="footer">
+      </section>
+      <footer class="footer">
         <div class="text" data-content="Auto-renewable. Cancel anytime."></div>
         <div class="links">
-            <a href="#" data-content="Terms of Use"></a>
-            <a href="#" data-content="Privacy Policy"></a>
+          <a href="#" data-content="Terms of Use"></a>
+          <a href="#" data-content="Privacy Policy"></a>
         </div>
-    </footer>
-</main>
-</body>
+      </footer>
+    </main>
+  </body>
 </html>
