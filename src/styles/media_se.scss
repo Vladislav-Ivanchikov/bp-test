@@ -1,5 +1,5 @@
 /* 6,7,8, se */
-@import "variables";
+@import "./src/styles/variables";
 
 @media screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   html[lang="fr"] {

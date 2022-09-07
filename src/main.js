@@ -1,23 +1,22 @@
-import "./style.scss";
-import "./media_se.scss";
-import "./media_plus.scss";
-import "./media_12.scss";
-
+import "./styles/style.scss";
+import "./styles/media_se.scss";
+import "./styles/media_plus.scss";
+import "./styles/media_12.scss";
+import {searchLang} from "./modules/searchLang";
 
 /// Set language
 const languages = ["en", "ru", "es", "fr", "nl", "zh", "ja"];
 let lang = navigator ? navigator.language.substring(0, 2).toLowerCase() : "en";
 let htmlLang = document.querySelector("html");
 
+/// Elements
 const contentElements = Array.from(document.querySelectorAll("[data-content]"));
-
-searchLang(languages);
-getContentByLang().then();
-
 const monthCard = document.querySelectorAll(".card")[0];
 const annualCard = document.querySelectorAll(".card")[1];
 const sale = document.querySelector(".sale");
 const button = document.querySelector("button");
+
+searchLang(languages, htmlLang, lang, contentElements)
 
 // Choose Sub
 annualCard.classList.add("active"); // default
@@ -46,26 +45,3 @@ button.addEventListener("click", () => {
     document.location = "https://google.com/";
   }
 });
-
-// Functions
-
-async function getContentByLang() {
-  let response = await fetch(`assets/lang/${lang}.json`);
-  let data = await response.json();
-
-  contentElements.map((item) => {
-    let dataset = item.dataset.content;
-    item.innerHTML = data[dataset];
-  });
-}
-
-function searchLang(langArr) {
-  let query = window.location.search;
-  let option = query.substring(6);
-  if (query.startsWith("?lang=") && langArr.some((el) => el === option)) {
-    lang = option;
-    htmlLang.lang = lang;
-  } else {
-    return null;
-  }
-}
